@@ -262,7 +262,7 @@
   height: 100%; /* change the height of the waves here */
   width: 100%;
   position: absolute;
-  top: 90px;
+  top: 45px;
   left: 0;
   right: 0;
   /* overflow-x: hidden; */
@@ -515,4 +515,15 @@ z-index: 1!important;
 
 .certiPagination .swiper-pagination-bullet-active{
 background-color: #00A0DD80!important;
+}
+.tandispagination .swiper-pagination-bullet-active{
+background-color: #00A0DD80!important;
+}
+
+.certificatscrollbar{
+  height: 2px!important;
+  background-color: #00BDF2!important;
+}
+.certificatscrollbar .swiper-scrollbar-drag{
+background-color: #0C4DA2;
 }
