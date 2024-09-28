@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Inter400";
+  src: 
+    url("../../_fonts/Inter-Regular.woff") format("woff"),
+    url("../../_fonts/Inter-Regular.woff2") format("woff2"),
+    url("../../_fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "IranYekan500";
   src: url("../../_fonts/iranyekanwebmedium.eot");
   src: url("../../_fonts/iranyekanwebmedium.eot?#iefix")

@@ -50,6 +50,7 @@ module.exports = {
       'IRANSansWeb(FaNum)700': ['"IRANSansWeb(FaNum)700"'],
       'IRANSansWeb(FaNum)400': ['"IRANSansWeb(FaNum)400"'],
       'sgKara400': ['"sgKara400"'],
+      'Inter400': ['"Inter400"'],
       'IRANYekan300': ['"IRANYekan300"'],
       'IRANYekan400': ['"IRANYekan400"'],
       'IRANYekan500': ['"IRANYekan500"'],
