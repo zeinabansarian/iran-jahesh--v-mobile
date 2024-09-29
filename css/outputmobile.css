@@ -981,6 +981,18 @@ video {
   margin-top: 3em;
 }
 
+.mr-\[5\%\] {
+  margin-right: 5%;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-44 {
+  margin-top: 11rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1136,6 +1148,10 @@ video {
   height: 100svh;
 }
 
+.h-\[31px\] {
+  height: 31px;
+}
+
 .min-h-\[580px\] {
   min-height: 580px;
 }
@@ -1207,6 +1223,18 @@ video {
 
 .w-svw {
   width: 100svw;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-\[96px\] {
+  width: 96px;
+}
+
+.max-w-\[1050px\] {
+  max-width: 1050px;
 }
 
 .flex-shrink {
@@ -2138,6 +2166,14 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-\[11px\] {
+  border-radius: 11px;
+}
+
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2982,6 +3018,15 @@ video {
 
 .text-lightGay\/\[0\.3\] {
   color: rgb(229 229 229 / 0.3);
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-black\/\[0\.5\] {
+  color: rgb(0 0 0 / 0.5);
 }
 
 .underline {
@@ -4161,6 +4206,11 @@ header rect , header path , .menuBar span{
   height: 1px;
 }
 
+.before\:h-\[10px\]::before {
+  content: var(--tw-content);
+  height: 10px;
+}
+
 .before\:w-\[53px\]::before {
   content: var(--tw-content);
   width: 53px;
@@ -4169,6 +4219,11 @@ header rect , header path , .menuBar span{
 .before\:w-px::before {
   content: var(--tw-content);
   width: 1px;
+}
+
+.before\:w-\[10px\]::before {
+  content: var(--tw-content);
+  width: 10px;
 }
 
 .before\:rounded-full::before {
@@ -4282,8 +4337,17 @@ header rect , header path , .menuBar span{
   cursor: pointer;
 }
 
+.hover\:bg-blue-4:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 192 221 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-White:hover {
+  color: #ffff;
 }
 
 .before\:hover\:text-center:hover::before {
@@ -4313,6 +4377,11 @@ header rect , header path , .menuBar span{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:text-blue-4 {
+  --tw-text-opacity: 1;
+  color: rgb(43 192 221 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {
