@@ -1,0 +1,41 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="19" catid="56188"> <member name="list" size="344x502" propertyid="85059" type="list"/> </basis>	
+
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیست پروژه‌ها</title>
+
+    <meta name="description" content="لیست پروژه‌های ایران جهش" />
+
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/outputmobile.css">
+</head>
+<body>
+    <div class="projectList" dir="rtl">
+        <h1 class="font-sgKara400 w-90p mx-auto mt-32 mb-6 text-base text-blue-3">پروژه‌های اجرایی انجام شده</h1>
+
+        <div class="projectContainer w-90p mx-auto"> 
+            <basis core="print" datamembername="db.list">
+          
+                <face>
+                    <div class="projBox mb-7">
+                        <a href="/@link" title="@title">
+                            <div class="imgS border border-orange">
+                                <img class="w-full" src="/@00344X00502prp" alt="@title" title="@title">
+                            </div>
+                            <h2 class="relative mt-3 flex before:rounded-full before:w-px before:h-px before:bg-blue-2 gap-x-2 font-IranYekan400 text-base text-blue-2">
+                             @title
+                            </h2>
+                        </a>
+                    </div>
+                    
+                </face>
+            </basis>
+        </div>
+    </div>
+
+    <basis core="call" file="mobile-script.inc" />
+</body>
+</html>

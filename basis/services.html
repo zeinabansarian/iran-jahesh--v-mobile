@@ -1,0 +1,88 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2361130"> <member name="service" type="view"/> </basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2361130">
+ <member name="image-service" type="list" format="4"/>
+
+ <member name="serviceList" type="list" format="4" postsql="select * from [db.serviceList] where ord=51"/>
+ </basis>
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیست خدمات</title>
+    <meta name="description" content="لیست خدمات ایران جهش" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/outputmobile.css">
+</head>
+<body>
+    <div class="services">
+        <section class="section1  relative">
+
+          
+            <div class="imgS">
+                <basis core="print" datamembername="db.image-service">
+                   
+                    <face filter="ord=50">
+                        <img class="w-full" src="/@largeIMG" alt="درباره ایران جهش" title="درباره ایران جهش">
+                        
+                    </face>
+                </basis>
+            </div>
+ 
+             <div class="ocean z-1 !-bottom-1">
+                 <div class="wave"></div>
+                 <div class="wave"></div>
+                 <div class="wave"></div>
+               </div>
+         </section>
+
+         <section class="section2 px-[5%]" dir="rtl">
+            <div class="title flex items-center gap-x-2 mt-10 mb-7">
+                <div class="icon">
+                    <img src="images/—Pngtree—blue round waterdrop illustration_5446285 3.png" alt=" درباره ما" title=" درباره ما">
+                </div>
+                <h1 class="font-IRANSansWeb(FaNum)700 text-2xl text-blue-3">
+
+                    خدمات
+                </h1>
+            </div>
+
+            <div class="serviceContainer">
+                <basis core="print" datamembername="db.serviceList">
+                  
+                    <face>
+                        <div class="seviceBox mb-6 group bg-hover-bg border-hover-bg duration-700 border px-4 py-2.5 rounded-[10px]">
+                            <div class="rSide">
+                                <div class="flex mb-4 justify-between items-end">
+        
+                                    <div class="number">
+                                        <span class="font-Biotif700 text-xl ">
+                                            0@RowNumber
+                                        </span>
+                                    </div>
+                                    <div class="icon">
+                                        <img class="grayscale group-hover:grayscale-0 duration-700" src="/@largeIMG" alt="@name" title="@name">
+                                    </div>
+                                </div>
+                                <h2 class="font-IranYekan700 text-sm mb-2">
+                                  @name
+                                </h2>
+                                <div class="para font-IranYekan300 text-sm">
+                                    <p>
+                                        @description
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                    </face>
+                </basis>
+            </div>
+         </section>
+    
+    </div>
+    <basis core="call" file="mobile-script.inc" />
+
+</body>
+</html>
