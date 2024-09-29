@@ -877,6 +877,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1068,6 +1072,10 @@ video {
   height: 0.25rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-\[12px\] {
   height: 12px;
 }
@@ -1122,6 +1130,10 @@ video {
 
 .\!w-90p {
   width: 90% !important;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-4 {
@@ -1269,6 +1281,22 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
 .cursor-pointer {
@@ -2467,6 +2495,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2618,6 +2651,14 @@ video {
   padding-top: 1.75rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2710,6 +2751,10 @@ video {
   font-family: IranYekan400, IranYekan400;
 }
 
+.font-IranYekan500 {
+  font-family: IranYekan500, IranYekan500;
+}
+
 .font-IranYekan700 {
   font-family: IranYekan700, IranYekan700;
 }
@@ -2723,9 +2768,18 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-\[34px\] {
+  font-size: 34px;
 }
 
 .text-\[48px\] {
@@ -2763,10 +2817,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[34px\] {
-  font-size: 34px;
 }
 
 .font-bold {
@@ -3748,7 +3798,7 @@ video {
 
 .clipPathSection {
   width: 100%;
-  height: 351px;
+  height: 247px;
   background-color: white;
   /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); سایه به شکل موجی */
   box-shadow: 0px 0px 7px 0px #00A0DD80;
@@ -4055,19 +4105,14 @@ header rect , header path , .menuBar span{
   height: 1px;
 }
 
-.before\:w-\[5\%\]::before {
+.before\:w-\[53px\]::before {
   content: var(--tw-content);
-  width: 5%;
+  width: 53px;
 }
 
 .before\:w-px::before {
   content: var(--tw-content);
   width: 1px;
-}
-
-.before\:w-\[53px\]::before {
-  content: var(--tw-content);
-  width: 53px;
 }
 
 .before\:rounded-full::before {
@@ -4097,6 +4142,16 @@ header rect , header path , .menuBar span{
   inset: 0px;
 }
 
+.after\:left-0::after {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:right-0::after {
+  content: var(--tw-content);
+  right: 0px;
+}
+
 .after\:right-\[16px\]::after {
   content: var(--tw-content);
   right: 16px;
@@ -4105,6 +4160,11 @@ header rect , header path , .menuBar span{
 .after\:right-\[65px\]::after {
   content: var(--tw-content);
   right: 65px;
+}
+
+.after\:top-0::after {
+  content: var(--tw-content);
+  top: 0px;
 }
 
 .after\:top-\[11px\]::after {
@@ -4153,6 +4213,11 @@ header rect , header path , .menuBar span{
   background-color: rgb(0 59 142 / 0.37);
 }
 
+.after\:bg-blue-3\/\[0\.53\]::after {
+  content: var(--tw-content);
+  background-color: rgb(0 59 142 / 0.53);
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -4188,11 +4253,6 @@ header rect , header path , .menuBar span{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:text-blue-4 {
-  --tw-text-opacity: 1;
-  color: rgb(43 192 221 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {
