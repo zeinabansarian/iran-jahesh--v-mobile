@@ -607,3 +607,15 @@ display: flex;
 .footerInfo p{
 display: contents;
 }
+
+.proPagination .swiper-pagination-bullet{
+width: 12px;
+height: 12px;
+}
+.proPagination .swiper-pagination-bullet-active{
+  background-color: #00A0DD80;
+}
+
+.product .proSlide1Scrollbar .swiper-scrollbar-drag{
+background-color: #0C4DA2;
+}
