@@ -167,7 +167,8 @@
     font-style: normal;
     font-display: swap;
   }
-  /* font-family: "IRANSansWeb(FaNum)400";
+  @font-face {
+   font-family: "IRANSansWeb(FaNum)400";
   src: url("../../_fonts/IRANSansWebRegular.eot");
   src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
       format("embedded-opentype"),
@@ -176,8 +177,8 @@
     url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap; */
-/* } */
+  font-display: swap; 
+ }
 @font-face {
   font-family: "IRANYekan300";
   src: url("../../_fonts/IRANYekanLight.eot");

@@ -1,0 +1,324 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="20" usedforid="[##cms.query.id##]"> <member name="product" type="view"/> </basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="20" usedforid="[##cms.query.id##]"> <member name="productGallery" type="list" /> </basis>	
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="20" usedforid="[##cms.query.id##]"> <member name="related-product" type="list" blgid="221" size="275x202"/> </basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" usedforid="[##cms.query.id##]" > <member request="navigationcat" type="tree" name="cat-name" /> </basis>
+
+
+<basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
+    <member request="json-ld" type="scalar" name="fq" /> 
+   </basis>
+   <basis core="dbsource" request="seo" source="basiscore" name="db" lid="1" >
+    <member name="seolist" type="list" request="product" id="[##cms.query.id##]"></member>
+</basis>
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <basis core="print" datamembername="db.seolist">
+        <face>
+            <title>[##cms.seo.title|db.seolist.title##]</title>
+            <meta name="description" content="[##cms.seo.description|db.seolist.description##]" />
+        </face>
+    </basis>
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/outputmobile.css">
+</head>
+
+<body>
+    <div class="product">
+
+        <basis core="call" file="header-mobile.inc" />
+
+        <section class="section1 flex flex-col items-center justify-center h-svh overflow-hidden relative">
+
+
+            <div
+                class="imgS w-full h-full relative after:w-full after:h-full after:absolute after:top-0 after:left-0 after:right-0 after:bg-blue-3/[0.53]">
+                <img class="w-full" src="[##cms.cms.cdn##]/images/product-mobile.jpg" alt="درباره ایران جهش"
+                    title="درباره ایران جهش">
+            </div>
+            <div class="overLay absolute px-16">
+                <basis core="print" datamembername="db.cat-name">
+
+                    <face filter="Parentcatid not in (53583,56125)">
+                        <h2 class="font-IranYekan500 text-White text-center mb-3 text-3xl">
+                            @title
+                        </h2>
+
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.productGallery">
+
+                    <face filter="ord=1">
+                        <div class="imgS flex items-center justify-center relative">
+                            <img src="images/Subtract-mobile.png" alt="Subtract" title="Subtract">
+
+                            <img style="width: 123px;" class="absolute" src="/@largeIMG" alt="@name" title="@name">
+                        </div>
+
+                    </face>
+                </basis>
+                <div class="mod mt-4 flex items-center gap-x-7 justify-center">
+                    <basis core="print" datamembername="db.product">
+
+                        <face filter="prpID=84502">
+                            <div class="hz relative w-20 h-20 rounded-full bg-White flex items-center justify-center">
+                                <span class="absolute font-IranYekan300 text-2xl text-blue-4 whitespace-nowrap">
+                                    @Answer Hz
+                                </span>
+                            </div>
+
+                        </face>
+                    </basis>
+                    <basis core="print" datamembername="db.product">
+                        <layout>
+                            <div class="flex gap-x-1">
+                                <span class="font-IranYekan500 text-3xl text-White whitespace-nowrap">
+                                    Model :
+                                </span>
+                                @child
+                            </div>
+                        </layout>
+
+                        <face filter="TypeID=150">
+
+                            <h1 class="font-IranYekan500 text-3xl text-White">
+                                @Answer
+                            </h1>
+                        </face>
+                    </basis>
+                </div>
+                <div class="goDown flex justify-center animate-bounce mt-3">
+                    <svg width="16" height="65" viewBox="0 0 16 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.29289 64.7071C7.68341 65.0976 8.31658 65.0976 8.7071 64.7071L15.0711 58.3431C15.4616 57.9526 15.4616 57.3195 15.0711 56.9289C14.6805 56.5384 14.0474 56.5384 13.6569 56.9289L8 62.5858L2.34314 56.9289C1.95262 56.5384 1.31945 56.5384 0.92893 56.9289C0.538405 57.3195 0.538405 57.9526 0.92893 58.3431L7.29289 64.7071ZM7 -4.37114e-08L7 64L9 64L9 4.37114e-08L7 -4.37114e-08Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="ocean z-1 !-bottom-1">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </section>
+
+        <basis core="print" datamembername="db.productGallery">
+            <layout>
+                <section class="section2 w-90p mx-auto relative pb-10">
+                    <div class="outerClip" style="filter: drop-shadow(0px 0px 4px #00A0DD80);padding-top: 10px;">
+                        <div class="sliderSection clipPathSection">
+                            <div class="swiper h-full proGallery">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+
+
+                                    @child
+                                </div>
+                                <!-- If we need pagination -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination proPagination"></div>
+                </section>
+
+            </layout>
+
+            <face filter="ord=1000">
+                <div class="swiper-slide">
+                    <div class="imgS h-full">
+                        <img class="w-full" src="/@largeIMG" alt="@name">
+                    </div>
+                </div>
+            </face>
+        </basis>
+
+        <basis core="view" datamembername="db.product">
+            <layout>
+                <section class="section3 w-90p mx-auto mt-10" dir="rtl">
+                    <h3 class="mb-3 font-IranYekan700 text-lg text-blue-2">
+                        مشخصات
+                    </h3>
+                    <ul>
+                        @child
+                    </ul>
+                </section>
+            </layout>
+            
+            <face filter="TypeID not in (159,150)" level="1">
+                <li class="flex justify-between items-center py-3 border-b border-b-blue-4">
+                    <span class="font-IranYekan300 text-base">
+                        @Question
+                    </span>
+    
+                    <div class="schemas font-IranYekan300 text-base">
+                        @child
+                    </div>
+                </li>
+                
+            </face>
+            <face level="2">
+                <p>
+                    @Answer
+                </p>
+    
+                <p class="last:hidden font-IranYekan300 text-base">
+                    ,
+                </p>
+            </face>
+        </basis>
+        <section class="section4 overflow-hidden mb-14 flex justify-center items-end relative">
+            <div class="ocean3 z-1">
+                <div class="waves -rotate-6">
+                    
+                    <div class="wave3"></div>
+                    <div class="wave3"></div>
+                    <div class="wave3"></div>
+                </div>
+                
+                <div class="backG h-full z-0 -rotate-6"></div>
+            </div>
+            <div class="imgS w-90p mt-36 mx-auto flex-col flex relative items-center justify-center"
+            style="z-index: 11;">
+            <basis core="print" datamembername="db.productGallery">
+               
+          
+                <face filter="ord=2">
+                    <img src="/@largeIMG" alt="@name">
+                    
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.product">
+            
+                <face filter="TypeID=150">
+                    <p class="font-IranYekan700 text-lg mt-7">
+                        model @Answer
+                    </p>
+                    
+                </face>
+            </basis>
+            </div>
+        </section>
+
+        <basis core="print" datamembername="db.productGallery">
+            <layout>
+                <section class="section5 w-90p mx-auto mb-12">
+                    <div class="imgS">
+                        @child
+                    </div>
+                </section>
+            </layout>
+            
+            <face filter="ord=3">
+                <img class="w-full" src="/@largeIMG" alt="@name " title="@name">
+                
+            </face>
+        </basis>
+
+        <basis core="print" datamembername="db.productGallery">
+            <layout>
+                <section class="section6 w-90p mx-auto mb-20">
+                    <div class="swiper modelSwiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                         
+                           
+          @child
+                        </div>
+                        <!-- If we need pagination -->
+        
+        
+                    </div>
+                </section>
+              
+            </layout>
+         
+            <face filter="ord=4">
+                <div class="swiper-slide">
+                    <div class="imgS">
+                        <img class="w-full" src="/@largeIMG" alt="@name">
+                    </div>
+                </div>
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.related-product">
+            <layout>
+                <section class="section7 pb-10 bg-blue-2">
+                    <div class="title w-90p mx-auto pt-11 pb-12 flex items-center gap-x-2 mb-7" dir="rtl">
+                        <div class="icon">
+                            <img src="images/—Pngtree—blue round waterdrop illustration_5446285 3.png" alt=" درباره ما"
+                                title=" درباره ما">
+                        </div>
+                        <h4 class="font-IRANSansWeb(FaNum)700 text-lg text-blue-4">
+        
+                            محصولات مرتبط
+                        </h4>
+                    </div>
+                    <div class="swiper proSlide1 pb-16" dir="rtl">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                        
+                          
+                            @child
+        
+        
+        
+                        </div>
+        
+        
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar proSlide1Scrollbar !w-90p left-0 right-0 mx-auto bg-before-blue !h-[3px]">
+                        </div>
+                    </div>
+                </section>
+            
+            </layout>
+          
+            <face>
+                <div class="swiper-slide group">
+        
+        
+                    <a class="relative bg-White rounded-lg overflow-hidden block" href="/@link" title="@title">
+                        <div class="imgS flex overflow-hidden justify-center items-center">
+                            <img class="w-full group-hover:scale-125 duration-1000" src="/@00275X00202prp"
+                                alt="@title" title=@title>
+                        </div>
+                        <div class="over absolute bottom-0 left-0">
+                            <div class="titleIn flex relative items-center justify-center">
+
+                                <img src="images/Vector 303.png" alt="">
+
+                                <span class="absolute text-blue-4 duration-500 font-Biotif700  text-sm">
+                                    @title
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </face>
+        </basis>
+
+
+        <basis core="call" file="footer-mobile.inc" />
+
+    </div>
+
+    <basis core="call" file="mobile-script.inc" />
+
+    <script src="[##cms.cms.cdn##]/_js/swiper-bundle11.0.5.min.js"></script>
+    <script src="[##cms.cms.cdn##]/newD/js/product-mobile.js"></script>
+    <script type="application/ld+json"> 
+        [##json.fq.column1##] 
+        </script>
+</body>
+
+</html>
