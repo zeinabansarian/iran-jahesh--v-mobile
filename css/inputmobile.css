@@ -12,6 +12,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "IranYekan500";
   src: url("../../_fonts/iranyekanwebmedium.eot");
@@ -195,17 +196,6 @@
     font-display: swap;
   }
 
-  /* font-family: "IRANSansWeb(FaNum)400";
-  src: url("../../_fonts/IRANSansWebRegular.eot");
-  src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../_fonts/IRANSansWebRegular.woff") format("woff"),
-    url("../../_fonts/IRANSansWebRegular.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; */
-/* } */
 @font-face {
   font-family: "IRANYekan300";
   src: url("../../_fonts/IRANYekanLight.eot");
@@ -236,36 +226,6 @@
     url("../../_fonts/IRANYekanX-Medium.woff2") format("woff2"),
     url("../../_fonts/IRANYekanX-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Sahitya400";
-  src: url("../../_fonts/Biotif-Bold.eot");
-  src: url("../../_fonts/Biotif-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../../_fonts/Biotif-Bold.woff") format("woff"),
-    url("../../_fonts/Biotif-Bold.woff2") format("woff2"),
-    url("../../_fonts/Biotif-Bold.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Biotif700";
-  src: url("../../_fonts/Sahitya-Regular.eot");
-  src: url("../../_fonts/Sahitya-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../../_fonts/Sahitya-Regular.woff") format("woff"),
-    url("../../_fonts/Sahitya-Regular.woff2") format("woff2"),
-    url("../../_fonts/Sahitya-Regular.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "sgKara400";
-  src:
-    url("../../_fonts/SG Kara Regular.ttf") format("truetype");
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -866,7 +826,7 @@ padding-right: 1em;
   position:absolute;
   content:'';
   right:0;
-  top:60%;
+  top:38%;
   width:5px;
   height:5px;
   background-color: #003B8E;
@@ -988,4 +948,40 @@ display: flex;
 
 .footerInfo p{
 display: contents;
+}
+.Home-Mobile .Section-2 p{
+  font-size: 14px;
+font-weight: 300;
+line-height: 24.18px;
+font-family: 'IranYekan300';
+}
+.Home-Mobile .Service img{
+  height: 113px;
+}
+.Blog p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20.73px;
+  font-family: 'IranYekan300';
+}
+
+
+.Error header .open svg path,
+.Error header .menuBar svg path,
+.Error header .menuBar span{
+  fill:#003B8E;
+  color: #003B8E;
+}
+
+.Error .menuBar svg rect{
+  stroke: #003B8E;
+}
+.menuContainer{
+  z-index: 9999 !important;
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>404</title>
+    <meta name="description" content="404">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/outputmobile.css">
+</head>
+<body>
+    <main class="Error w-full ">
+        <basis core="call" file="header-mobile.inc" />
+        <div class="Line w-[81%] right-0 mx-auto absolute left-0 top-0 z-[-1]">
+            <div class="lineWater absolute z-10 left-[0]  h-screen overflow-hidden pl-[1em]">
+            <svg width="310" height="844" viewBox="0 0 310 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="linePath" d="M64.9991 0C26.0999 126 39.1749 87.6312 17.2905 156.733C-92.9058 504.685 397.922 599 237.451 833" stroke="url(#paint0_angular_519_3520)" stroke-width="2"/>
+                <defs>
+                <radialGradient id="paint0_angular_519_3520" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(134.432 918.849) rotate(90) scale(2367.28 161.787)">
+                <stop stop-color="#F6F6F6"/>
+                <stop offset="0.333333" stop-color="#00A0DD" stop-opacity="0.17"/>
+                <stop offset="0.364583" stop-color="white" stop-opacity="0.56"/>
+                <stop offset="1" stop-color="#00A0DD" stop-opacity="0.17"/>
+                </radialGradient>
+                </defs>
+                </svg>
+                  
+                <img class="movingImage duration-700" id="movingImage" src="images/drop-a7f56da4e20cecfc0e712317b6ad2865.gif" alt="Moving Image" width="50" height="50" style="position:absolute;width: 0;">                
+            </div>
+            </div>
+            <div class="Box w-full flex flex-col h-[80vh] justify-center items-center mt-[17vh]">
+
+            <div class="IMG w-full justify-center h-[50%] flex items-center ">
+                <svg width="180" height="181" viewBox="0 0 180 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47.7273 97.3682H57.0341V107.391H47.7273V124H35.2705V107.391H3.00682L2.67273 99.8023L34.8409 49.3545H47.7273V97.3682ZM15.75 97.3682H35.2705V66.2023L34.3636 67.8727L15.75 97.3682ZM113.944 92.5955C113.944 103.318 111.923 111.4 107.882 116.841C103.873 122.282 97.7641 125.002 89.555 125.002C81.505 125.002 75.4277 122.345 71.3232 117.032C67.2505 111.718 65.1664 103.859 65.0709 93.4545V80.5205C65.0709 69.7977 67.0755 61.7477 71.0846 56.3705C75.0936 50.9932 81.2186 48.3045 89.4596 48.3045C97.6368 48.3045 103.73 50.9295 107.739 56.1795C111.748 61.3977 113.816 69.225 113.944 79.6614V92.5955ZM101.439 78.6114C101.439 71.6114 100.485 66.4886 98.5755 63.2432C96.6664 59.9659 93.6277 58.3273 89.4596 58.3273C85.3868 58.3273 82.3959 59.8705 80.4868 62.9568C78.5777 66.0432 77.5755 70.8795 77.48 77.4659V94.3614C77.48 101.33 78.4505 106.532 80.3914 109.968C82.3323 113.373 85.3868 115.075 89.555 115.075C93.5641 115.075 96.5232 113.5 98.4323 110.35C100.341 107.168 101.344 102.22 101.439 95.5068V78.6114Z" fill="#2BC0DD"/>
+                    <path d="M167.727 83.6318H177.034V73.6091H167.727V57H155.27V73.6091H123.007L122.673 81.1977L154.841 131.645H167.727V83.6318ZM135.75 83.6318H155.27V114.798L154.364 113.127L135.75 83.6318Z" fill="#2BC0DD"/>
+                    </svg>
+                    
+                    
+            </div>
+            <div class="Det w-full h-[20%] flex flex-col gap-3 justify-center items-center">
+                <h1 class="font-IranYekan700 font-bold text-2xl leading-41.45 text-[#00A0DD33]">
+                    صفحه مورد نظر یافت نشد
+                </h1>
+                <div class="Btn w-auto mx-auto flex justify-center items-center">
+                    <button class="ShowBtn group duration-150 w-max px-[3em] py-[.8em] hover:bg-blue-4
+                    flex justify-start rounded-[50px] border-[1px] border-blue-4">
+                      <a href="/" alt="iranjahesh" title="iranjahesh" class="w-full h-full flex justify-center items-center rounded-[50px] duration-150
+                      font-IranYekan400 font-normal text-base leading-27.64 text-blue-2 group-hover:text-[#ffff] ">
+                      بازگشت به صفحه نخست
+                      </a>
+                  </button>
+                </div>
+            </div>
+            
+         </div>
+            
+    </main>
+    <basis core="call" file="mobile-script.inc" />
+    <script src="[##cms.cms.cdn##]/newD/js/MotionPathPlugin.min.js"></script>
+    <script>
+        
+//   قطره
+                     
+let movingImage = document.querySelector(".movingImage")
+movingImage.style.width="revert-layer"
+  gsap.registerPlugin(ScrollTrigger);
+
+// ابتدا مسیر خط SVG را دریافت می‌کنیم
+const path = document.querySelector("#linePath");
+const image = document.querySelector("#movingImage");
+
+const pathLength = path.getTotalLength();
+setTimeout(() => {
+    // GSAP انیمیشن اسکرول:
+    gsap.to(image, {
+      scrollTrigger: {
+        trigger: path, // شروع انیمیشن هنگام ورود خط SVG به ویوپورت
+        start: "top 10%", // زمانی که ابتدای SVG در وسط صفحه باشد
+        end: "bottom center", // پایان انیمیشن زمانی که انتهای SVG در وسط صفحه باشد
+        scrub: 2, // همگام‌سازی انیمیشن با اسکرول
+      },
+      motionPath: {
+        path: path, // مسیری که باید تصویر طی کند
+        align: path, // هم‌راستایی تصویر با مسیر
+        alignOrigin: [0.8, 0], // تنظیم موقعیت تصویر روی مسیر
+      },
+    
+      duration: 2, // مدت زمان انیمیشن
+      ease: "none" // بدون تغییرات سرعت در انیمیشن
+    });
+    
+}, 500);
+
+    </script>
+</body>
+</html>

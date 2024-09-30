@@ -20,7 +20,7 @@
     <member name="def-project" type="list" size="1280x572"/> 
 </basis>
 <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="210054"> 
-    <member name="def-blog" type="list" size="303x222" propertyid="7244" postsql=" select *, SUBSTR(prp_7244, 1,230-CHARINDEX(' ', REVERSE(SUBSTR(prp_7244, 1, 200)))) || '...' as substr from [db.def-blog]"/> 
+    <member name="def-blog" type="list" size="390x286" propertyid="7244,7248,7249" postsql=" select *, SUBSTR(prp_7244, 1,230-CHARINDEX(' ', REVERSE(SUBSTR(prp_7244, 1, 200)))) || '...' as substr from [db.def-blog]"/> 
 </basis>
 <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2361039">
      <member name="def-sec7" type="view"  postsql="select * from [db.def-sec7] where TypeID in (250)"/> 
@@ -169,7 +169,7 @@
                         </layout>
                         <face filter="ord=1002">
                         <video class="w-full  object-cover" src="@largeIMG"
-                        poster="images/watering-beets-large-field-using-self-propelled-sprinkler-system-with-center-swing-modern-agricultural-technologies-industrial-production-agricultural-crops-copy-space_395899-73 1.png"></video>
+                     ></video>
                         <div class="ov w-full h-full absolute flex justify-center items-center
                         top-0 left-0 z-3 group-[&.toggle]:opacity-0 group-[&.toggle]:left-[-100%] duration-[.5s]">
                             <div class="play ">
@@ -183,7 +183,7 @@
                     </basis>
                     </div>
                 </div>
-                <div class="Ocean-sec w-full h-[4em] absolute left-0 bottom-0 z-2">
+                <div class="Ocean-sec w-full h-[4em] absolute left-0 bottom-[-1em] z-2">
                     <div class="ocean z-1 w-full h-full flex" dir="ltr">
                         <div class="wave"></div>
                         <div class="wave"></div>
@@ -261,7 +261,6 @@
               </div>
          <div class="ProjectsSlider overflow-hidden w-full flex  flex-col justify-center items-center" dir="ltr">
             <div id="js-cta-slider" class="cta__slider-wrapper swiper-container relative overflow-hidden" >
-                <div class="swiper-wrapper cta__slider">
                     <div class="swiper-wrapper cta__slider">
                         <basis core="print" datamembername="db.def-project">
                             <layout>
@@ -290,6 +289,8 @@
                  </ul>
              </div>
             </div>
+          
+           
             <div class="swiper-Title overflow-hidden w-full">
                 <div class="swiper-wrapper w-full">
                     <basis core="print" datamembername="db.def-project">
@@ -512,12 +513,12 @@
                         <div class="Blog w-full flex flex-col">
                             <div class="IMG w-full flex justify-start items-start overflow-hidden group duration-[.8s]">
                                 <a href="@link" alt="@title" title="@title" class="w-full flex">
-                                <img src="@00303X00202prp" alt="@title" title="@title" class="w-full object-cover duration-[.8s]
+                                <img src="@00390X00286prp" alt="@title" title="@title" class="w-full object-cover duration-[.8s]
                                  group-hover:scale-[1.3]"></a>
                             </div>
-                            <span class="Date flex font-IRANSansWeb(FaNum)400 
+                            <span class="faNum Date flex font-IRANSansWeb400 
                             font-normal text-sm leading-21.91 text-[#00000080]">
-                               @cdate
+                            @prp_7249
                             </span>
                             <div class="Det w-full flex flex-col gap-3">
                                 <div class="Title w-full flex justify-start items-center">
@@ -528,7 +529,7 @@
                                 </div>
                                 <div class="Text w-full flex justify-start items-start flex-col">
                                     <p class="font-IranYekan300 font-light text-sm leading-24.18 text-black text-justify">
-                                        @substr
+                                        @prp_7244	
                                     </p>
                                 </div>
                             </div>
@@ -547,7 +548,7 @@
             <button class="ShowBtn group duration-150 mx-auto my-[1.5em] w-max px-[5em] py-[.8em] hover:bg-blue-4
             flex justify-start rounded-[50px] border-[1px] border-blue-4">
               <a href="blogs" title="iranjahesh" alt="iranjahesh" class="w-full h-full flex justify-center items-center rounded-[50px] duration-150
-              font-IRANSansWeb(FaNum)400 font-normal text-base leading-25.04 text-black group-hover:text-[#ffff] ">
+              IRANSansWeb400 font-normal text-base leading-25.04 text-black group-hover:text-[#ffff] ">
               همه مقالات 
               </a>
           </button>
@@ -561,7 +562,7 @@
                 <layout>
                     @child
                 </layout>
-                <face filter="RowNumber < 4">
+                <face filter="RowNumber in (1,2,3) ">
             <div class="feature-item w-full flex  justify-start items-start ">
                 <p class="font-IranYekan300 font-light text-xs leading-[23.34px] text-blue-3">
                     @text
@@ -594,7 +595,7 @@
                 <layout>
                     @child
                 </layout>
-                <face filter="RowNumber > 4">
+                <face filter="RowNumber in (4,5,6) ">
             <div class="feature-item w-full flex  justify-start items-start ">
                 <p class="font-IranYekan300 font-light text-xs leading-[23.34px] text-blue-3">
                     @text
