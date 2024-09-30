@@ -1,0 +1,157 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="20" catid="56182"> <member name="list1" type="list" size="275x202"/> </basis>
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="20" catid="56183"> <member name="m-list2" type="list" size="275x202"/> </basis>
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>دسته بندی محصولات</title>
+
+   
+    <meta name="description" content="دسته بندی محصولات ایران جهش" />
+
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/newD/css/outputmobile.css">
+</head>
+<body>
+    <div class="productCat">
+
+        <basis core="call" file="header-mobile.inc" />
+
+        <div class="section1 overflow-hidden relative">
+            <div class="imgS">
+                <img class="w-full" src="[##cms.cms.cdn##]/images/productCat-mobile.jpg" alt="@name">
+            </div>
+         
+            <div class="overTitle absolute left-0 right-0 bottom-20 z-1">
+                <h2 class="font-Biotif700 text-[34px] text-White text-center" style="letter-spacing: 10px;">
+                    product
+                </h2>
+                <h1 class="text-center font-IRANSansWeb(FaNum)700 text-xl text-White">
+                    محصولات
+                </h1>
+            </div>
+        </div>
+        <div class="containerrr bg-ligh-blue">
+             
+
+            <basis core="print" datamembername="db.list1">
+                <layout>
+                
+                    <section class="section2" dir="rtl">
+                        <div class="title py-14">
+        
+                            <h3 class="before:w-[53px] text-blue-3 before:block before:bg-before-blue before:h-[37px] flex items-center gap-x-1">
+                                پمپ‌های طبقاتی             
+                            </h3>
+                        </div>
+        
+                        <div class="sliderSection relative" style="z-index: 11;">
+                            <div class="swiper proSlide1 pb-[75px]" dir="rtl">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                  <!-- Slides -->
+                              
+                             
+                               
+                                 @child
+                              
+                                </div>
+                             
+                              
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar proSlide1Scrollbar !w-90p left-0 right-0 mx-auto bg-before-blue !h-[3px]"></div>
+                              </div>
+                          
+                        </div>
+                    </section>
+                </layout>
+          
+                <face>
+                    <div class="swiper-slide group">
+                                    
+        
+                        <a class="relative bg-White rounded-lg overflow-hidden block" href="/@link" title="@title">
+                            <div class="imgS flex overflow-hidden justify-center items-center">
+                                <img style="width: 270px;" class="w-full group-hover:scale-125 duration-1000" src="/@00275X00202prp" alt="@title" title=@title>
+                            </div>
+                            <div class="over absolute bottom-0 left-0">
+                                <div class="titleIn flex relative items-center justify-center">
+
+                                    <img src="images/Vector 303.png" alt="@title">
+
+                                    <span class="absolute text-blue-4 duration-500 font-Biotif700  text-sm">
+                                        @title
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                </face>
+            </basis>
+
+
+            <basis core="print" datamembername="db.m-list2">
+                <layout>
+               
+                    <section class="section3" dir="rtl">
+                        <div class="title py-14">
+        
+                            <h3 class="before:w-[53px] text-blue-3 before:block before:bg-before-blue before:h-[37px] flex items-center gap-x-1">
+                                پمپ‌های طبقاتی             
+                            </h3>
+                        </div>
+        
+                        <div class="sliderSection relative" style="z-index: 11;">
+                            <div class="swiper proSlide2 pb-[75px]" dir="rtl">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                  <!-- Slides -->
+                                 
+                                  @child
+                              
+                                </div>
+                             
+                              
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar proSlide2Scrollbar !w-90p left-0 right-0 mx-auto bg-before-blue !h-[3px]"></div>
+                              </div>
+                          
+                        </div>
+                    </section>
+                </layout>
+           
+                <face>
+                    <div class="swiper-slide group">
+                                    
+        
+                        <a class="relative bg-White rounded-lg overflow-hidden block" href="/@link" title="@title">
+                            <div class="imgS flex overflow-hidden justify-center items-center">
+                                <img style="width: 270px;" class="w-full group-hover:scale-125 duration-1000" src="/@00275X00202prp" alt="@title" title=@title>
+                            </div>
+                            <div class="over absolute bottom-0 left-0">
+                                <div class="titleIn flex relative items-center justify-center">
+
+                                    <img src="images/Vector 303.png" alt="">
+
+                                    <span class="absolute text-blue-4 duration-500 font-Biotif700  text-sm">
+                                        @title
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                </face>
+            </basis>
+        </div>
+
+        <basis core="call" file="footer-mobile.inc" />
+        
+    </div>
+    <basis core="call" file="mobile-script.inc" />
+
+    <script src="[##cms.cms.cdn##]/_js/swiper-bundle11.0.5.min.js"></script>
+    <script src="[##cms.cms.cdn##]/newD/js/productCat-mobile.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/outputmobile.css">
+</head>
+<body>
+    <div class="searchPage">
+        <div class="searchForm">
+            <div class="flex-col searchContainer bg-White w-svw h-svh flex items-center justify-center duration-1000">
+                <div class="flex w-90p justify-center items-center innerSearch mx-auto" dir="rtl">
+                    <form class="border border-blue-4/[0.5] h-[54px] px-3 w-full flex items-center font-IRANYekan500 text-base " action="">
+                        <input class="w-full focus-visible:outline-none " type="search" placeholder="جستجو کنید..." name="" id="">
+                        <button class="cursor-pointer" type="submit">
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.9495 0C6.25796 0 0 6.29378 0 14.0293C0 21.7648 6.25796 28.0586 13.9495 28.0586C17.4777 28.0586 20.7061 26.7289 23.1685 24.5467L29.6924 30.9997L31 29.6645L24.4818 23.2166C26.6097 20.7528 27.9046 17.5409 27.9046 14.029C27.8991 6.2935 21.641 0 13.9495 0ZM13.9495 26.1856C7.28737 26.1856 1.86235 20.7314 1.86235 14.0293C1.86235 7.32909 7.28551 1.87301 13.9495 1.87301C20.6115 1.87301 26.0366 7.32722 26.0366 14.0293C26.0366 20.7295 20.6134 26.1856 13.9495 26.1856Z" fill="#003B8E"/>
+                                </svg>
+                                
+                                
+                        </button>
+                    </form>
+                </div>
+
+              
+            </div>
+        </div>
+        <!-- <div class="searchForm notFound">
+            <div class="flex-col searchContainer bg-White w-svw h-svh flex items-center justify-center duration-1000">
+                <div class="flex w-90p justify-center items-center innerSearch mx-auto" dir="rtl">
+                    <form class="border border-blue-4/[0.5] h-[54px] px-3 w-full flex items-center font-IRANYekan500 text-base " action="">
+                        <input class="w-full focus-visible:outline-none " type="search" placeholder="جستجو کنید..." name="" id="">
+                        <button class="cursor-pointer" type="submit">
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.9495 0C6.25796 0 0 6.29378 0 14.0293C0 21.7648 6.25796 28.0586 13.9495 28.0586C17.4777 28.0586 20.7061 26.7289 23.1685 24.5467L29.6924 30.9997L31 29.6645L24.4818 23.2166C26.6097 20.7528 27.9046 17.5409 27.9046 14.029C27.8991 6.2935 21.641 0 13.9495 0ZM13.9495 26.1856C7.28737 26.1856 1.86235 20.7314 1.86235 14.0293C1.86235 7.32909 7.28551 1.87301 13.9495 1.87301C20.6115 1.87301 26.0366 7.32722 26.0366 14.0293C26.0366 20.7295 20.6134 26.1856 13.9495 26.1856Z" fill="#003B8E"/>
+                                </svg>
+                                
+                                
+                        </button>
+                    </form>
+                </div>
+
+                <div class="para text-center mt-36 font-IRANYekan500 text-base text-blue-3" dir="rtl">
+                    <p>
+                        با عرض پوزش نتیجه ای یافت نشد.
+                        <br>
+لطفا واژه ی دیگری را جستجو نمایید.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+   
+        <!-- <div class="searchReasault">
+            <div class="flex w-90p mt-32 justify-center items-center innerSearch mx-auto" dir="rtl">
+                <form class="border border-blue-4/[0.5] h-[54px] px-3 w-full flex items-center font-IRANYekan500 text-base " action="">
+                    <input class="w-full focus-visible:outline-none " type="search" placeholder="جستجو کنید..." name="" id="">
+                    <button class="cursor-pointer" type="submit">
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.9495 0C6.25796 0 0 6.29378 0 14.0293C0 21.7648 6.25796 28.0586 13.9495 28.0586C17.4777 28.0586 20.7061 26.7289 23.1685 24.5467L29.6924 30.9997L31 29.6645L24.4818 23.2166C26.6097 20.7528 27.9046 17.5409 27.9046 14.029C27.8991 6.2935 21.641 0 13.9495 0ZM13.9495 26.1856C7.28737 26.1856 1.86235 20.7314 1.86235 14.0293C1.86235 7.32909 7.28551 1.87301 13.9495 1.87301C20.6115 1.87301 26.0366 7.32722 26.0366 14.0293C26.0366 20.7295 20.6134 26.1856 13.9495 26.1856Z" fill="#003B8E"/>
+                            </svg>
+                            
+                            
+                    </button>
+                </form>
+            </div>
+            <div class="resaultContainer mt-16">
+                <div class="resaultArticle">
+                    <div class="title mb-4 mr-[5%]" dir="rtl">
+                        <p class="font-IRANYekan500 text-lg text-blue-3">
+                            نتیجه جستجو در مقالات
+                        </p>
+                    </div>
+        
+                    <div class="sliderSection mb-16" dir="rtl">
+                        <div class="swiper articleSlider px-[5%]">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide group">
+                                
+                                <div class="articleBox">
+                                    <div class="imgS overflow-hidden rounded-[11px]">
+                                        <a href="" title="@title">
+                                            <img class="w-full duration-1000 group-hover:scale-125" src="images/Rectangle 4718.png" alt="@title" title="@title">
+                                        </a>
+                                    </div>
+                                    <div class="tit">
+                                        <span class="font-IRANSansWeb(FaNum)400 text-black/[0.5] mt-1 text-sm">
+                                            1402-02-02
+                                        </span>
+                                        <h3 class="py-2 font-IRANSansWeb(FaNum)400 text-base">
+                                            <a href="" title="@title">
+        
+                                                پمپ چیست ؟
+                                            </a>
+                                        </h3>
+                                        <div class="para font-IRANYekan300 text-sm text-justify">
+                                            <p>
+                                                پمپ دستگاهی است كه انرژی مكانيكی را به انرژی هيدروليكی تبديل می کند و نتيجه آن افزايش انرژی پتانسيل ( فشار سيال عبوری از پمپ) يا...
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                  
+                                </div>
+                              </div>
+                            
+                            </div>
+                         
+                          </div>
+                    </div>
+
+                </div>
+
+                <div class="resaultProduct">
+                    <div class="title mb-4 mr-[5%]" dir="rtl">
+                        <p class="font-IRANYekan500 text-lg text-blue-3">
+                            نتیجه جستجو در محصولات
+                        </p>
+                    </div>
+        
+                    <div class="sliderSection mb-16" dir="rtl">
+                        <div class="swiper proSlider py-4 px-[5%]">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide group">
+                    
+
+                                <a class="relative bg-White rounded-lg overflow-hidden block" href="" title="@title">
+                                    <div class="imgS flex overflow-hidden justify-center items-center">
+                                        <img class="w-full group-hover:scale-125 duration-1000" src="images/Rectangle 1.png" alt="@title" title=@title>
+                                    </div>
+                                    <div class="over absolute bottom-0 left-0">
+                                        <div class="titleIn flex relative items-center justify-center">
+            
+                                            <img src="images/Vector 303.png" alt="">
+            
+                                            <span class="absolute text-White duration-500 font-Biotif700  text-sm">
+                                                CP2
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                              </div>
+                            
+                            </div>
+                         
+                          </div>
+                    </div>
+
+                </div>
+
+                <div class="resaultProject">
+                    <div class="title mb-4 mr-[5%]" dir="rtl">
+                        <p class="font-IRANYekan500 text-lg text-blue-3">
+                            نتیجه جستجو در پروژه‌ها
+                        </p>
+                    </div>
+        
+                    <div class="sliderSection mb-16" dir="rtl">
+                        <div class="swiper projectSlider px-[5%]">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide group">
+                                
+                                <div class="projBox">
+                                    <a href="/@link" title="@title">
+                                        <div class="imgS border border-orange">
+                                            <img class="w-full" src="images/Rectangle 15.png" alt="@title" title="@title">
+                                        </div>
+                                        <h2 class="relative mt-3 flex items-baseline before:rounded-full before:w-[10px] before:h-[10px] before:bg-blue-2 gap-x-2 font-IranYekan400 text-base text-blue-2">
+                                            پروژه شهرک نفت
+                                        </h2>
+                                    </a>
+                                </div>
+                              </div>
+                            
+                            </div>
+                         
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+   
+   
+    </div>
+
+    <script src="js/swiper-bundle11.0.5.min.js"></script>
+    <script src="js/search-mobile.js"></script>
+</body>
+</html>

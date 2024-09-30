@@ -940,6 +940,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -992,12 +996,17 @@ video {
   margin-right: 1.5em;
 }
 
+<<<<<<< HEAD
 .mr-\[3\%\] {
   margin-right: 3%;
 }
 
 .mr-auto {
   margin-right: auto;
+=======
+.mr-\[5\%\] {
+  margin-right: 5%;
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 }
 
 .mt-1 {
@@ -1016,6 +1025,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1028,8 +1041,16 @@ video {
   margin-top: 8rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-44 {
+  margin-top: 11rem;
 }
 
 .mt-5 {
@@ -1038,6 +1059,10 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .mt-8 {
@@ -2446,6 +2471,7 @@ video {
   border-radius: 10px;
 }
 
+<<<<<<< HEAD
 .rounded-\[4px\] {
   border-radius: 4px;
 }
@@ -2460,6 +2486,10 @@ video {
 
 .rounded-\[8px\] {
   border-radius: 8px;
+=======
+.rounded-\[11px\] {
+  border-radius: 11px;
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 }
 
 .rounded-full {
@@ -2651,6 +2681,7 @@ video {
   border-color: rgb(255 92 0 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 .border-b-black {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -2659,6 +2690,11 @@ video {
 .border-b-blue-1 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(0 160 221 / var(--tw-border-opacity));
+=======
+.border-b-blue-4 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(43 192 221 / var(--tw-border-opacity));
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 }
 
 .bg-White {
@@ -2968,6 +3004,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2983,6 +3024,7 @@ video {
   padding-bottom: 1.75rem;
 }
 
+<<<<<<< HEAD
 .py-\[\.8em\] {
   padding-top: .8em;
   padding-bottom: .8em;
@@ -2998,6 +3040,8 @@ video {
   padding-bottom: 2em;
 }
 
+=======
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -3006,12 +3050,20 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 
 .pb-20 {
   padding-bottom: 5rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .pb-3 {
@@ -3086,6 +3138,10 @@ video {
   padding-right: 5%;
 }
 
+.pt-11 {
+  padding-top: 2.75rem;
+}
+
 .pt-28 {
   padding-top: 7rem;
 }
@@ -3110,6 +3166,7 @@ video {
   padding-top: 1.75rem;
 }
 
+<<<<<<< HEAD
 .pt-\[1em\] {
   padding-top: 1em;
 }
@@ -3118,6 +3175,8 @@ video {
   padding-left: 1em;
 }
 
+=======
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 .text-left {
   text-align: left;
 }
@@ -3479,6 +3538,13 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
+=======
+.text-black\/\[0\.5\] {
+  color: rgb(0 0 0 / 0.5);
+}
+
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 .text-blue-1 {
   --tw-text-opacity: 1;
   color: rgb(0 160 221 / var(--tw-text-opacity));
@@ -4247,6 +4313,27 @@ video {
   font-display: swap;
 }
 
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: "IRANSansWeb(FaNum)400";
+
+  src: url("../../_fonts/IRANSansWebRegular.eot");
+
+  src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWebRegular.woff") format("woff"),
+    url("../../_fonts/IRANSansWebRegular.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 @font-face {
   font-family: "IRANYekan300";
 
@@ -5044,6 +5131,7 @@ header rect , header path , .menuBar span{
   display: contents;
 }
 
+<<<<<<< HEAD
 .Home-Mobile .Section-2 p{
   font-size: 14px;
   font-weight: 300;
@@ -5081,6 +5169,19 @@ header rect , header path , .menuBar span{
 
 .menuContainer{
   z-index: 9999 !important;
+=======
+.proPagination .swiper-pagination-bullet{
+  width: 12px;
+  height: 12px;
+}
+
+.proPagination .swiper-pagination-bullet-active{
+  background-color: #00A0DD80;
+}
+
+.product .proSlide1Scrollbar .swiper-scrollbar-drag{
+  background-color: #0C4DA2;
+>>>>>>> 4bba78849cfbbc25c6de5e32a3a3a28bb2f07b37
 }
 
 @media (min-width: 480px) {
@@ -5118,6 +5219,11 @@ header rect , header path , .menuBar span{
   display: block;
 }
 
+.before\:h-\[10px\]::before {
+  content: var(--tw-content);
+  height: 10px;
+}
+
 .before\:h-\[37px\]::before {
   content: var(--tw-content);
   height: 37px;
@@ -5126,6 +5232,11 @@ header rect , header path , .menuBar span{
 .before\:h-px::before {
   content: var(--tw-content);
   height: 1px;
+}
+
+.before\:w-\[10px\]::before {
+  content: var(--tw-content);
+  width: 10px;
 }
 
 .before\:w-\[53px\]::before {
@@ -5239,6 +5350,10 @@ header rect , header path , .menuBar span{
 .after\:bg-blue-3\/\[0\.53\]::after {
   content: var(--tw-content);
   background-color: rgb(0 59 142 / 0.53);
+}
+
+.last\:hidden:last-child {
+  display: none;
 }
 
 .hover\:cursor-pointer:hover {
